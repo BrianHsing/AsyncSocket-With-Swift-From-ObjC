@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		833F0F671A1B041900DA4F05 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 833F0F661A1B041900DA4F05 /* README.md */; };
 		8359EA141A1AF1B40077D86E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8359EA131A1AF1B40077D86E /* AppDelegate.swift */; };
 		8359EA1B1A1AF1B40077D86E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8359EA1A1A1AF1B40077D86E /* Images.xcassets */; };
 		8359EA2A1A1AF1B40077D86E /* AsyncSocketWithSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8359EA291A1AF1B40077D86E /* AsyncSocketWithSwiftTests.swift */; };
@@ -26,6 +27,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		833F0F661A1B041900DA4F05 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		8359EA0E1A1AF1B40077D86E /* AsyncSocketWithSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AsyncSocketWithSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8359EA121A1AF1B40077D86E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8359EA131A1AF1B40077D86E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -62,6 +64,7 @@
 		8359EA051A1AF1B40077D86E = {
 			isa = PBXGroup;
 			children = (
+				833F0F661A1B041900DA4F05 /* README.md */,
 				8359EA101A1AF1B40077D86E /* AsyncSocketWithSwift */,
 				8359EA261A1AF1B40077D86E /* AsyncSocketWithSwiftTests */,
 				8359EA0F1A1AF1B40077D86E /* Products */,
@@ -242,6 +245,7 @@
 			files = (
 				835FFFC51A1AF20400596FBD /* MainController.swift in Sources */,
 				835FFFC41A1AF20400596FBD /* AsyncUdpSocket.m in Sources */,
+				833F0F671A1B041900DA4F05 /* README.md in Sources */,
 				8359EA141A1AF1B40077D86E /* AppDelegate.swift in Sources */,
 				835FFFC31A1AF20400596FBD /* AsyncSocket.m in Sources */,
 			);
