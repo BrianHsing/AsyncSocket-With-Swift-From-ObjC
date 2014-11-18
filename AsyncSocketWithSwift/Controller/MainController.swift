@@ -56,7 +56,6 @@ class MainController: UIViewController,UITextFieldDelegate,AsyncSocketDelegate {
     
     func onSocket(sock: AsyncSocket!, willDisconnectWithError err: NSError!) {
         println("Info___willDisconnectWithError")
-        println("test")
     }
     
 }
