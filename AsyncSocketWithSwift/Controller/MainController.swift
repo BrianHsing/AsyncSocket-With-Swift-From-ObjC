@@ -21,12 +21,12 @@ class MainController: UIViewController,UITextFieldDelegate,AsyncSocketDelegate {
         }
         
         let open_Button : UIButton! = UIButton(frame: CGRectMake(10, 50, 100, 30))
-        open_Button.setTitle("SentData", forState: UIControlState.Normal)
+        open_Button.setTitle("SentData1", forState: UIControlState.Normal)
         open_Button.addTarget(self, action: Selector("testOpen"), forControlEvents: UIControlEvents.TouchDown)
         view.addSubview(open_Button)
         
         let close_Button : UIButton! = UIButton(frame: CGRectMake(100, 50, 130, 30))
-        close_Button.setTitle("RecieveData", forState: UIControlState.Normal)
+        close_Button.setTitle("SentData2", forState: UIControlState.Normal)
         close_Button.addTarget(self, action: Selector("testClose"), forControlEvents: UIControlEvents.TouchDown)
         view.addSubview(close_Button)
     }
