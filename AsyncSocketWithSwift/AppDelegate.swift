@@ -1,21 +1,15 @@
-//
-//  AppDelegate.swift
-//  AsyncSocketWithSwift
-//
-//  Created by Hsing on 2014/11/18.
-//  Copyright (c) 2014年 BrianHsing. All rights reserved.
-//
-
 import UIKit
-
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    var mainController: MainController?
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        window = UIWindow(frame: UIScreen.mainScreen().bounds)
+        window?.rootViewController = MainController()
+        window?.makeKeyAndVisible()
         return true
     }
 

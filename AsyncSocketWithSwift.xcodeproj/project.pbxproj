@@ -8,11 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		8359EA141A1AF1B40077D86E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8359EA131A1AF1B40077D86E /* AppDelegate.swift */; };
-		8359EA161A1AF1B40077D86E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8359EA151A1AF1B40077D86E /* ViewController.swift */; };
-		8359EA191A1AF1B40077D86E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8359EA171A1AF1B40077D86E /* Main.storyboard */; };
 		8359EA1B1A1AF1B40077D86E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8359EA1A1A1AF1B40077D86E /* Images.xcassets */; };
-		8359EA1E1A1AF1B40077D86E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8359EA1C1A1AF1B40077D86E /* LaunchScreen.xib */; };
 		8359EA2A1A1AF1B40077D86E /* AsyncSocketWithSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8359EA291A1AF1B40077D86E /* AsyncSocketWithSwiftTests.swift */; };
+		835FFFC31A1AF20400596FBD /* AsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 835FFFBB1A1AF20400596FBD /* AsyncSocket.m */; };
+		835FFFC41A1AF20400596FBD /* AsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 835FFFBD1A1AF20400596FBD /* AsyncUdpSocket.m */; };
+		835FFFC51A1AF20400596FBD /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835FFFBF1A1AF20400596FBD /* MainController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,13 +29,16 @@
 		8359EA0E1A1AF1B40077D86E /* AsyncSocketWithSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AsyncSocketWithSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8359EA121A1AF1B40077D86E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8359EA131A1AF1B40077D86E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8359EA151A1AF1B40077D86E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		8359EA181A1AF1B40077D86E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8359EA1A1A1AF1B40077D86E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		8359EA1D1A1AF1B40077D86E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		8359EA231A1AF1B40077D86E /* AsyncSocketWithSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AsyncSocketWithSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8359EA281A1AF1B40077D86E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8359EA291A1AF1B40077D86E /* AsyncSocketWithSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncSocketWithSwiftTests.swift; sourceTree = "<group>"; };
+		835FFFBA1A1AF20400596FBD /* AsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncSocket.h; sourceTree = "<group>"; };
+		835FFFBB1A1AF20400596FBD /* AsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsyncSocket.m; sourceTree = "<group>"; };
+		835FFFBC1A1AF20400596FBD /* AsyncUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncUdpSocket.h; sourceTree = "<group>"; };
+		835FFFBD1A1AF20400596FBD /* AsyncUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsyncUdpSocket.m; sourceTree = "<group>"; };
+		835FFFBF1A1AF20400596FBD /* MainController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
+		835FFFC21A1AF20400596FBD /* SwiftObjC-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SwiftObjC-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,10 +81,11 @@
 			isa = PBXGroup;
 			children = (
 				8359EA131A1AF1B40077D86E /* AppDelegate.swift */,
-				8359EA151A1AF1B40077D86E /* ViewController.swift */,
-				8359EA171A1AF1B40077D86E /* Main.storyboard */,
+				835FFFC21A1AF20400596FBD /* SwiftObjC-Bridging-Header.h */,
+				835FFFB91A1AF20400596FBD /* AsyncSocket */,
+				835FFFBE1A1AF20400596FBD /* Controller */,
+				835FFFC11A1AF20400596FBD /* Model */,
 				8359EA1A1A1AF1B40077D86E /* Images.xcassets */,
-				8359EA1C1A1AF1B40077D86E /* LaunchScreen.xib */,
 				8359EA111A1AF1B40077D86E /* Supporting Files */,
 			);
 			path = AsyncSocketWithSwift;
@@ -110,6 +114,32 @@
 				8359EA281A1AF1B40077D86E /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		835FFFB91A1AF20400596FBD /* AsyncSocket */ = {
+			isa = PBXGroup;
+			children = (
+				835FFFBA1A1AF20400596FBD /* AsyncSocket.h */,
+				835FFFBB1A1AF20400596FBD /* AsyncSocket.m */,
+				835FFFBC1A1AF20400596FBD /* AsyncUdpSocket.h */,
+				835FFFBD1A1AF20400596FBD /* AsyncUdpSocket.m */,
+			);
+			path = AsyncSocket;
+			sourceTree = "<group>";
+		};
+		835FFFBE1A1AF20400596FBD /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				835FFFBF1A1AF20400596FBD /* MainController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		835FFFC11A1AF20400596FBD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -192,8 +222,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8359EA191A1AF1B40077D86E /* Main.storyboard in Resources */,
-				8359EA1E1A1AF1B40077D86E /* LaunchScreen.xib in Resources */,
 				8359EA1B1A1AF1B40077D86E /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -212,8 +240,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8359EA161A1AF1B40077D86E /* ViewController.swift in Sources */,
+				835FFFC51A1AF20400596FBD /* MainController.swift in Sources */,
+				835FFFC41A1AF20400596FBD /* AsyncUdpSocket.m in Sources */,
 				8359EA141A1AF1B40077D86E /* AppDelegate.swift in Sources */,
+				835FFFC31A1AF20400596FBD /* AsyncSocket.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -234,25 +264,6 @@
 			targetProxy = 8359EA241A1AF1B40077D86E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		8359EA171A1AF1B40077D86E /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8359EA181A1AF1B40077D86E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		8359EA1C1A1AF1B40077D86E /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8359EA1D1A1AF1B40077D86E /* Base */,
-			);
-			name = LaunchScreen.xib;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		8359EA2B1A1AF1B40077D86E /* Debug */ = {
@@ -341,6 +352,7 @@
 				INFOPLIST_FILE = AsyncSocketWithSwift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "AsyncSocketWithSwift/SwiftObjC-Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -351,6 +363,7 @@
 				INFOPLIST_FILE = AsyncSocketWithSwift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "AsyncSocketWithSwift/SwiftObjC-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -407,6 +420,7 @@
 				8359EA2F1A1AF1B40077D86E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8359EA301A1AF1B40077D86E /* Build configuration list for PBXNativeTarget "AsyncSocketWithSwiftTests" */ = {
 			isa = XCConfigurationList;
@@ -415,6 +429,7 @@
 				8359EA321A1AF1B40077D86E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
